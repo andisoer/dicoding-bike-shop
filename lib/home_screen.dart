@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'model/bicycle.dart';
+
 class HomeScreenPage extends StatelessWidget {
   const HomeScreenPage({Key? key}) : super(key: key);
 
@@ -20,8 +22,36 @@ class HomeScreenPage extends StatelessWidget {
                   ),
                   IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.shopping_cart, color: Colors.black))
+                      icon: Icon(Icons.shopping_cart, color: Colors.black87))
                 ],
+              ),
+              GridView.count(
+                shrinkWrap: true,
+                crossAxisCount: 2,
+                children: bikeList.map((bike) {
+                  return InkWell(
+                    onTap: () {},
+                    child: Card(
+                      elevation: 4.0,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8)),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Expanded(
+                              child: Image.network(bike.imageTitle)),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              bike.name,
+                              style: TextStyle(fontSize: 16),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  );
+                }).toList(),
               ),
             ],
           ),
