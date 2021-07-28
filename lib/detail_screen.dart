@@ -138,7 +138,7 @@ class _DetailScreenPageState extends State<DetailScreenPage> {
                                   onPressed: () {
                                     addToCart(widget.bicycle.bikeId, context);
                                   },
-                                  child: Icon(Icons.add_shopping_cart)),
+                                  child: Icon(Icons.add_shopping_cart, color: Color.fromARGB(1000, 4, 93, 42),)),
                             ),
                             Expanded(
                                 flex: 6,
@@ -146,7 +146,7 @@ class _DetailScreenPageState extends State<DetailScreenPage> {
                                   margin: EdgeInsets.only(left: 14),
                                   child: ElevatedButton(
                                       style:
-                                          ElevatedButton.styleFrom(elevation: 0, padding: EdgeInsets.all(16)),
+                                          ElevatedButton.styleFrom(elevation: 0, padding: EdgeInsets.all(16), primary: Color.fromARGB(1000, 4, 93, 42)),
                                       onPressed: () {},
                                       child: Text('Buy Now')),
                                 ))
