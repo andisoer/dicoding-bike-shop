@@ -1,4 +1,5 @@
 import 'package:bike_shop/cart_screen.dart';
+import 'package:bike_shop/checkout_screen.dart';
 import 'package:bike_shop/model/bicycle.dart';
 import 'package:bike_shop/model/cart.dart';
 import 'package:bike_shop/util/badge_util.dart';
@@ -147,7 +148,11 @@ class _DetailScreenPageState extends State<DetailScreenPage> {
                                   child: ElevatedButton(
                                       style:
                                           ElevatedButton.styleFrom(elevation: 0, padding: EdgeInsets.all(16), primary: Color.fromARGB(1000, 4, 93, 42)),
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        Navigator.push(context, MaterialPageRoute(builder: (context) {
+                                          return CheckoutScreenPage();
+                                        }));
+                                      },
                                       child: Text('Buy Now')),
                                 ))
                           ],

@@ -40,7 +40,7 @@ var bikeList = [
       imageTitle:
           'https://www.polygonbikes.com/wp-content/uploads/2021/07/MY22-Cascade-3-345x230.png',
       brand: 'Polygon',
-      color: Color.fromARGB(100, 227, 232, 192)),
+      color: Color.fromARGB(1000, 227, 232, 192)),
   Bicycle(
       bikeId: 3,
       name: 'Cascade 2',
@@ -60,7 +60,7 @@ var bikeList = [
       imageTitle:
           'https://www.polygonbikes.com/wp-content/uploads/2020/06/PREMIER-4-TA-345x230.png',
       brand: 'Polygon',
-      color: Color.fromARGB(100, 223, 223, 207)),
+      color: Color.fromARGB(1000, 223, 223, 207)),
   Bicycle(
       bikeId: 5,
       name: 'Premier 4',
@@ -70,5 +70,5 @@ var bikeList = [
       imageTitle:
           'https://www.polygonbikes.com/wp-content/uploads/2021/02/MY21-PREMIER-FOUR-P-345x230.png',
       brand: 'Polygon',
-      color: Color.fromARGB(100, 223, 223, 207)),
+      color: Color.fromARGB(1000, 223, 223, 207)),
 ];
