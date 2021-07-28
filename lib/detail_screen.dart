@@ -1,11 +1,20 @@
+import 'package:bike_shop/cart_screen.dart';
 import 'package:bike_shop/model/bicycle.dart';
+import 'package:bike_shop/model/cart.dart';
+import 'package:bike_shop/util/badge_util.dart';
+import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 
-class DetailScreenPage extends StatelessWidget {
+class DetailScreenPage extends StatefulWidget {
   final Bicycle bicycle;
 
   DetailScreenPage({required this.bicycle});
 
+  @override
+  _DetailScreenPageState createState() => _DetailScreenPageState();
+}
+
+class _DetailScreenPageState extends State<DetailScreenPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +28,20 @@ class DetailScreenPage extends StatelessWidget {
           },
         ),
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.favorite_border, color: Colors.black))
+          Stack(alignment: Alignment.topRight, children: [
+            IconButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return CartScreenPage();
+                  })).then((value) {
+                    setState(() {});
+                  });
+                },
+                icon: Icon(Icons.shopping_cart, color: Colors.black)),
+            cartList.length > 0
+                ? BadgeUtil((cartList.length).toString())
+                : Container()
+          ])
         ],
       ),
       body: SingleChildScrollView(
@@ -27,23 +49,40 @@ class DetailScreenPage extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
-              Text(bicycle.brand),
-              Text(bicycle.name),
-              Image.network(bicycle.imageTitle),
+              Text(widget.bicycle.brand),
+              Text(widget.bicycle.name),
+              Image.network(widget.bicycle.imageTitle),
               Row(
                 children: [
                   Column(
-                    children: [Text('Price'), Text(bicycle.price.toString())],
+                    children: [
+                      Text('Price'),
+                      Text(widget.bicycle.price.toString())
+                    ],
                   )
                 ],
               ),
-              Text(bicycle.description),
+              Text(widget.bicycle.description),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  OutlinedButton(
-                      onPressed: () {}, child: Icon(Icons.add_shopping_cart)),
-                  ElevatedButton(onPressed: () {}, child: Text('Buy Now'))
+                  Expanded(
+                    flex: 2,
+                    child: OutlinedButton(
+                        onPressed: () {
+                          addToCart(widget.bicycle.bikeId, context);
+                        },
+                        child: Icon(Icons.add_shopping_cart)),
+                  ),
+                  Expanded(
+                      flex: 6,
+                      child: Container(
+                        margin: EdgeInsets.only(left: 16),
+                        child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(elevation: 0),
+                            onPressed: () {},
+                            child: Text('Buy Now')),
+                      ))
                 ],
               )
             ],
@@ -51,5 +90,25 @@ class DetailScreenPage extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  void addToCart(bikeId, context) {
+    bool isItemExist = false;
+
+    if (cartList.firstWhereOrNull((cartItem) => cartItem.bikeId == bikeId) !=
+        null) {
+      isItemExist = true;
+    }
+
+    if (isItemExist) {
+      final snackBar = SnackBar(content: Text('Item already in cart !'));
+      ScaffoldMessenger.of(context).showSnackBar(snackBar);
+    } else {
+      setState(() {
+        cartList.add(Cart(bikeId: bikeId));
+      });
+      final snackBar = SnackBar(content: Text('Item added to cart !'));
+      ScaffoldMessenger.of(context).showSnackBar(snackBar);
+    }
   }
 }
