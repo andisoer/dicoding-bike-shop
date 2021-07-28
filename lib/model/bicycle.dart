@@ -71,4 +71,54 @@ var bikeList = [
           'https://www.polygonbikes.com/wp-content/uploads/2021/02/MY21-PREMIER-FOUR-P-345x230.png',
       brand: 'Polygon',
       color: Color.fromARGB(1000, 223, 223, 207)),
+  Bicycle(
+      bikeId: 6,
+      name: 'XTRADA 7',
+      price: 10200000,
+      description:
+      'The Xtrada 7 is designed for riders who want to ride on a wide variety of terrain. The ALX super light 6061 hydro formed aluminum frame uses heat treated, hydro formed and butted tubing to give an optimal strength to weight ratio. The tapered head tube provides stable, front-end precision and the new Boost hub spacing on this frame allows for a stiffer wheel with more tyre clearance. The Boost system has also allowed for shorter chain stays, which makes the back of the bike a lot easier to flick around corners.The Xtrada 7 utilises Polygon’s new Wheel Fit Size System whereby each frame size is paired with the wheel size that best fits the rider and sets them up for optimal efficiency and power transfer. Frame S, M, L feature 27.5” wheels and frame M, L, XL come with 29” wheels. The Xtrada 7 is a true cross country mountain bike with a geometry built for speed and stability coupled with tough, trail-ready components. It is perfect for hitting the local single track or an all-day mountain adventure.',
+      imageTitle:
+      'https://www.polygonbikes.com/wp-content/uploads/2020/08/MY20-XTRADA-7-CRANK-SHIMANO-2-345x230.png',
+      brand: 'Polygon',
+      color: Color.fromARGB(1000, 222, 188, 48)),
+  Bicycle(
+      bikeId: 7,
+      name: 'XTRADA 6 1×11',
+      price: 7500000,
+      description:
+      'The Xtrada 6 is designed for riders who want to ride on a wide variety of terrain. The ALX super light 6061 hydro formed aluminum frame uses heat treated, hydro formed and butted tubing to give an optimal strength to weight ratio. The tapered head tube provides stable, front-end precision and the new Boost hub spacing on this frame allows for a stiffer wheel with more tyre clearance. The Boost system has also allowed for shorter chain stays, which makes the back of the bike a lot easier to flick around corners.The Xtrada 6 utilises Polygon’s new Wheel Fit Size System whereby each frame size is paired with the wheel size that best fits the rider and sets them up for optimal efficiency and power transfer. Frame S, M, L feature 27.5” wheels and frame M, L, XL come with 29” wheels. The Xtrada 6 is a true cross country mountain bike with a geometry built for speed and stability coupled with tough, trail-ready components. It is perfect for hitting the local single track or an all-day mountain adventure.',
+      imageTitle:
+      'https://www.polygonbikes.com/wp-content/uploads/2020/08/MY20-XTRADA-6-1x11-TA-345x230.png',
+      brand: 'Polygon',
+      color: Color.fromARGB(1000, 128, 128, 128)),
+  Bicycle(
+      bikeId: 8,
+      name: 'STRATTOS S3',
+      price: 8000000,
+      description:
+      'Strattos S3 dengan semi carbon fork dan alloy frame yang ringan serta performa maksimal, cocok untuk olahraga rutin dan everyday commuters. Ride all day, experience more.',
+      imageTitle:
+      'https://www.polygonbikes.com/wp-content/uploads/2020/09/MY20-STRATTOS-S3-P_web-345x230.png',
+      brand: 'Polygon',
+      color: Color.fromARGB(100, 255, 255, 0)),
+  Bicycle(
+      bikeId: 9,
+      name: 'STRATTOS S7',
+      price: 22500000,
+      description:
+      'The new Strattos Disc brakes series offers an all-rounder road bikes to inspire you to turn every inch of pedal movement into pure speed. With technical parameters surpassing UCI standards and regulations, featuring a geometry favored by riders who have powerful pedaling style and also equipped with disc brakes for powerful and fade-free braking in all conditions. These agile carbon and alloy road bikes are made to fulfill your need for maximum performance either on your local lunch ride or when sprinting for the podium.',
+      imageTitle:
+      'https://www.polygonbikes.com/wp-content/uploads/2021/07/S7D2-P-345x230.png',
+      brand: 'Polygon',
+      color: Color.fromARGB(1000, 170, 170, 170)),
+  Bicycle(
+      bikeId: 10,
+      name: 'STRATTOS S5',
+      price: 7500000,
+      description:
+      'Strattos S5 dengan full carbon fork yang ringan dan dapat diandalkan. Disertai alloy frame yang ringan dan performa maksimal, serta perancangan desain yang cocok untuk olahraga rutin dan everyday commuters. Ride all day, experience more.',
+      imageTitle:
+      'https://www.polygonbikes.com/wp-content/uploads/2020/09/MY20-STRATTOS-S5-P_web-345x230.png',
+      brand: 'Polygon',
+      color: Color.fromARGB(100, 128, 0, 0)),
 ];
