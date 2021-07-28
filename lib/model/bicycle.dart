@@ -30,7 +30,7 @@ var bikeList = [
       imageTitle:
           'https://www.polygonbikes.com/wp-content/uploads/2021/07/MY22-CASCADE-FOUR-P-345x230.png',
       brand: 'Polygon',
-      color: Colors.white),
+      color: Color.fromARGB(100, 56, 101, 100)),
   Bicycle(
       bikeId: 2,
       name: 'Cascade 3',
@@ -40,7 +40,7 @@ var bikeList = [
       imageTitle:
           'https://www.polygonbikes.com/wp-content/uploads/2021/07/MY22-Cascade-3-345x230.png',
       brand: 'Polygon',
-      color: Colors.white),
+      color: Color.fromARGB(100, 227, 232, 192)),
   Bicycle(
       bikeId: 3,
       name: 'Cascade 2',
@@ -50,7 +50,7 @@ var bikeList = [
       imageTitle:
           'https://www.polygonbikes.com/wp-content/uploads/2021/02/MY20-CASCADE-TWO-G2-P-345x230.png',
       brand: 'Polygon',
-      color: Colors.white),
+      color: Color.fromARGB(100, 13, 70, 149)),
   Bicycle(
       bikeId: 4,
       name: 'Premier 5',
@@ -60,7 +60,7 @@ var bikeList = [
       imageTitle:
           'https://www.polygonbikes.com/wp-content/uploads/2020/06/PREMIER-4-TA-345x230.png',
       brand: 'Polygon',
-      color: Colors.white),
+      color: Color.fromARGB(100, 223, 223, 207)),
   Bicycle(
       bikeId: 5,
       name: 'Premier 4',
@@ -70,45 +70,5 @@ var bikeList = [
       imageTitle:
           'https://www.polygonbikes.com/wp-content/uploads/2021/02/MY21-PREMIER-FOUR-P-345x230.png',
       brand: 'Polygon',
-      color: Colors.white),
-  Bicycle(
-      bikeId: 6,
-      name: 'Premier 4',
-      price: 4200000,
-      description:
-          'The Premier series was created for riders who want a versatile mountain bike. Built with a lightweight and durable AL6 frame with modern geometry for a more comfortable leisure ride, the Premier will keep riders enthusiastic about riding for years to come. The Premier series fits the rider and sets them up for optimal efficiency and power transfer for day to day ride and sports.',
-      imageTitle:
-          'https://www.polygonbikes.com/wp-content/uploads/2021/02/MY21-PREMIER-FOUR-P-345x230.png',
-      brand: 'Polygon',
-      color: Colors.white),
-  Bicycle(
-      bikeId: 7,
-      name: 'Premier 4',
-      price: 4200000,
-      description:
-          'The Premier series was created for riders who want a versatile mountain bike. Built with a lightweight and durable AL6 frame with modern geometry for a more comfortable leisure ride, the Premier will keep riders enthusiastic about riding for years to come. The Premier series fits the rider and sets them up for optimal efficiency and power transfer for day to day ride and sports.',
-      imageTitle:
-          'https://www.polygonbikes.com/wp-content/uploads/2021/02/MY21-PREMIER-FOUR-P-345x230.png',
-      brand: 'Polygon',
-      color: Colors.white),
-  Bicycle(
-      bikeId: 8,
-      name: 'Premier 4',
-      price: 4200000,
-      description:
-          'The Premier series was created for riders who want a versatile mountain bike. Built with a lightweight and durable AL6 frame with modern geometry for a more comfortable leisure ride, the Premier will keep riders enthusiastic about riding for years to come. The Premier series fits the rider and sets them up for optimal efficiency and power transfer for day to day ride and sports.',
-      imageTitle:
-          'https://www.polygonbikes.com/wp-content/uploads/2021/02/MY21-PREMIER-FOUR-P-345x230.png',
-      brand: 'Polygon',
-      color: Colors.white),
-  Bicycle(
-      bikeId: 9,
-      name: 'Premier 4',
-      price: 4200000,
-      description:
-          'The Premier series was created for riders who want a versatile mountain bike. Built with a lightweight and durable AL6 frame with modern geometry for a more comfortable leisure ride, the Premier will keep riders enthusiastic about riding for years to come. The Premier series fits the rider and sets them up for optimal efficiency and power transfer for day to day ride and sports.',
-      imageTitle:
-          'https://www.polygonbikes.com/wp-content/uploads/2021/02/MY21-PREMIER-FOUR-P-345x230.png',
-      brand: 'Polygon',
-      color: Colors.white),
+      color: Color.fromARGB(100, 223, 223, 207)),
 ];

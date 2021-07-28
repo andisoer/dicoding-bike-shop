@@ -20,6 +20,12 @@ class _CartScreenPageState extends State<CartScreenPage> {
             Navigator.pop(context);
           },
         ),
+        centerTitle: true,
+        title: Text(
+          'Cart',
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 18, color: Colors.black),
+        ),
       ),
       body: Container(
         child: cartList.length > 0

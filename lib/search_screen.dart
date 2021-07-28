@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AboutScreenPage extends StatelessWidget {
+class SearchScreenPage extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,11 +18,9 @@ class AboutScreenPage extends StatelessWidget {
         elevation: 0,
         backgroundColor: Colors.white,
         centerTitle: true,
-        title: Text(
-          'About Apps',
-          textAlign: TextAlign.center,
-          style: TextStyle(fontSize: 18, color: Colors.black),
-        ),
+      ),
+      body: Center(
+        child: Text('Start exploring here'),
       ),
     );
   }
