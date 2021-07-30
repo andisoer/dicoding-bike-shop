@@ -1,4 +1,4 @@
-import 'package:bike_shop/checkout_screen.dart';
+import 'checkout_screen.dart';
 import 'package:bike_shop/model/bicycle.dart';
 import 'package:bike_shop/model/cart.dart';
 import 'package:flutter/material.dart';
