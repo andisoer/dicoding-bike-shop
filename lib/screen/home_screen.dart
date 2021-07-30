@@ -1,12 +1,12 @@
-import 'package:bike_shop/about_screen.dart';
-import 'package:bike_shop/cart_screen.dart';
-import 'package:bike_shop/detail_screen.dart';
-import 'package:bike_shop/search_screen.dart';
+import 'about_screen.dart';
+import 'cart_screen.dart';
+import 'detail_screen.dart';
+import 'search_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-import 'model/bicycle.dart';
+import '../model/bicycle.dart';
 
 class HomeScreenPage extends StatelessWidget {
   final rupiahCurrencyFormatter =

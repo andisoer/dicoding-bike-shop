@@ -1,5 +1,5 @@
-import 'package:bike_shop/cart_screen.dart';
-import 'package:bike_shop/checkout_screen.dart';
+import 'cart_screen.dart';
+import 'checkout_screen.dart';
 import 'package:bike_shop/model/bicycle.dart';
 import 'package:bike_shop/model/cart.dart';
 import 'package:bike_shop/util/badge_util.dart';
