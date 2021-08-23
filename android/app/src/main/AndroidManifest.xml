@@ -2,7 +2,7 @@
     package="com.soerjdev.bike_shop">
    <application
         android:label="Bike Shop"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
